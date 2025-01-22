@@ -1,7 +1,3 @@
-* {
-  margin: 3px 3px 3px 3px;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,9 +5,13 @@
   align-items: center;
   background-color: #f4f7fa;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0px 3px 3px 0px;
 }
 
+.scrollbar {
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -62,8 +62,7 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.btn,
-.btn1 {
+.btn {
   padding: 08px 15px;
   background-color: #007bff;
   color: white;
@@ -74,10 +73,22 @@
   background-color: rgb(247, 116, 116);
   color: rgb(25, 9, 241);
 }
+.contact{
+  margin-right: -250px;
+}
+
+.btn1 {
+  padding: 08px 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+.btn1:hover {
+  background-color: rgb(247, 116, 116);
+  color: rgb(25, 9, 241);
+}
 
 .slider {
-  text-align: center;
-  align-items: center;
   color: #fc5c00;
   font-size: large;
   padding: 10px;
@@ -92,15 +103,6 @@
     display: none;
     text-align: center;
   }
-  .hero {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    text-align: right;
-    align-items: right;
-    text-wrap: wrap;
-    background-color: white;
-    margin: 0px 3px 3px 0px;
-  }
 
   .h2k,
   .btn1 {
@@ -109,6 +111,27 @@
 
   .story1 {
     display: none;
+  }
+
+  .story {
+    display: flex;
+    justify-content: space-around;
+    grid-column: auto;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .story2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px 3px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
   }
 
   .curriculum {
@@ -129,6 +152,33 @@
   }
   .navbar {
     box-shadow: 0 2px 4px rgb(235, 16, 16);
+  }
+  .line {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: 100%;
+    border: 1px solid #1d1c1c;
+  }
+  .hero {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .hero-content {
+    text-align: center;
+    align-items: center;
+  }
+  .glory {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+  }
+  .btn6d {
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -154,6 +204,13 @@
   align-items: center;
   text-align: left;
 }
+.head2 {
+  text-wrap: wrap;
+  text-align: center;
+  color: rgb(240, 92, 38);
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
 .hero.image {
   height: 100px;
@@ -165,6 +222,10 @@
 .curriculum {
   background-image: url(assets/bg.png);
   align-items: center;
+  text-align: center;
+   border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
 }
 
 .curriculum2 {
@@ -245,23 +306,26 @@
   margin-bottom: 50px;
 }
 
+.slider {
+  text-align: center;
+  align-items: center;
+}
+
 /* story section */
 
 .glory {
+  background-image: url(assets/bg.png);
+  border-radius: 10px;
   align-items: center;
+  text-align: center;
   margin-top: 50px;
 }
 
 .story {
   display: flex;
-  justify-content: space-between;
-  grid-column: auto;
 }
 
-.story1 {
-}
-
-.story2 {
+.stories {
   display: flex;
   justify-content: space-around;
   margin: 5px;
@@ -269,27 +333,41 @@
   flex-wrap: wrap;
   align-items: center;
   border-radius: 5px;
+  text-align: center;
+   gap: 8px;
+}
+.story3, .story2,  .story4,  .story5,  .story6{ 
+  background-color: #e9f1dc;
 }
 
+
+
+.imagred{
+  border-radius: 50%;
+
+}
 /* Footer section */
 
-.footlogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .footer {
-  background-color: #aac6e4;
-  text-align: center;
+  background-color: #4c97e2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 10px;
   flex-wrap: wrap;
 }
 
-.foot {
-  display: flex;
-  justify-content: space-around;
-  background-color: #aac6e4;
+.ft{
+  background-color: #4c97e2;
   text-align: center;
-  margin-top: 10px;
+  color: #4007ac;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+}
+
+.foot{
+  background-color: #4c97e2;
+  text-align: center;
+
 }

@@ -62,7 +62,8 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.btn {
+.btn,
+.btn1 {
   padding: 08px 15px;
   background-color: #007bff;
   color: white;
@@ -74,25 +75,62 @@
   color: rgb(25, 9, 241);
 }
 
+.slider {
+  text-align: center;
+  align-items: center;
+  color: #fc5c00;
+  font-size: large;
+  padding: 10px;
+}
+
+.options {
+  visibility: hidden;
+}
 
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
+    text-align: center;
   }
-  .hero{
-
-    flex-wrap: wrap-reverse;  
+  .hero {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    text-align: right;
+    align-items: right;
+    text-wrap: wrap;
+    background-color: white;
+    margin: 0px 3px 3px 0px;
   }
 
-  .h2k{
+  .h2k,
+  .btn1 {
     display: none;
   }
- 
-.story1{
-  display: none;}
 
+  .story1 {
+    display: none;
+  }
+
+  .curriculum {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .footer {
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+  }
+
+  .options {
+    visibility: visible;
+    align-items: right;
+  }
+  .navbar {
+    box-shadow: 0 2px 4px rgb(235, 16, 16);
+  }
 }
-
 
 /* Hero section */
 
@@ -108,14 +146,13 @@
   color: rgb(15, 121, 11);
 }
 
-
-
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
   margin: 0px 3px 3px 0px;
   align-items: center;
+  text-align: left;
 }
 
 .hero.image {
@@ -127,39 +164,36 @@
 
 .curriculum {
   background-image: url(assets/bg.png);
-  text-align: center;
-  flex-wrap: wrap;
   align-items: center;
 }
 
 .curriculum2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
 }
 
 .kinder {
   background-image: url(assets/cool-background\(1\).png);
   margin: 10px 0 10px 0;
-  align-items: center;
   padding: 5px;
+  border-radius: 8px;
 }
 .elementary {
   background-image: url(assets/cool-background\(2\).png);
   margin: 10px 0 10px 0;
-  align-items: center;
   padding: 5px;
+  border-radius: 8px;
 }
 
 .middleClass {
   background-image: url(assets/cool-background\(3\).png);
   padding: 25px;
   margin: 10px 0 10px 0;
-  align-items: center;
   padding: 5px;
+  border-radius: 8px;
 }
+
 .btn3 {
   padding: 08px 15px;
   background-color: #0e0f0f;
@@ -194,18 +228,37 @@
   color: rgb(25, 9, 241);
 }
 
+.btn6 {
+  padding: 08px 15px;
+  background-color: #1d2222;
+  color: rgb(235, 37, 37);
+  border-radius: 5px;
+  align-items: center;
+}
+.btn6:hover {
+  background-color: rgb(247, 116, 116);
+  color: rgb(25, 9, 241);
+}
+
+.btn6d {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 /* story section */
+
+.glory {
+  align-items: center;
+  margin-top: 50px;
+}
 
 .story {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(233, 174, 98);
-  background-repeat: repeat-x 100%;
-  background-repeat: repeat-y 10px;
+  grid-column: auto;
 }
+
 .story1 {
-  background-color: #ddf5f5;
-  border-radius: 10px 10px 0 0;
 }
 
 .story2 {
@@ -224,22 +277,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer {
-  background-color: #61a3e9;
+  background-color: #aac6e4;
   text-align: center;
-  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .foot {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 50px 3px 3px 0;
-  background-color: #61a3e9;
-}
-
-.aboutcontact {
+  justify-content: space-around;
+  background-color: #aac6e4;
   text-align: center;
+  margin-top: 10px;
 }
